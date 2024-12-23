@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="../CSS/index.css" rel="stylesheet">
+    <title>methodes</title>
+    
+</head>
+<body>
+
+    <div class="container-fluid" style="background-color: #A2D5A0; padding: 10px;">
+        <div class="row align-items-center">
+    
+            <div class="col-2">
+                <a href="../index.html">
+                    <img id="logo" class="img-fluid rounded mx-auto d-block" src="../IMG/logo_v2.png" alt="Logo">
+                </a>
+            </div>
+    
+            <div class="col-10 d-flex justify-content-between">
+                <ul id="menu" class="nav nav-pills nav-justified burger-menu" style="background-color: #A2D5A0; padding: 10px;">
+                    <li class="nav-item">
+                        <a class="nav1-link" aria-current="page" href="../index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav1-link" href="./BioControle.html">Bio-controle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav1-link active" href="./methodes.html">Méthodes</a>
+                    </li>
+                    <button class="nav-item nav1-link dropdown-center dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Projet 
+                    </button>
+                    <ul class="dropdown-menu nav-item">
+                        <li><a class="dropdown-item" href="./etudesdecas1.html">Projet 1 4SYSLEG</a></li>
+                        <li><a class="dropdown-item" href="./etudesdecas2.html">Projet 2 BioREco</a></li>
+                        <li><a class="dropdown-item" href="./etudesdecas3.html">Projet 3 CAP ReD</a></li>
+                        <li><a class="dropdown-item" href="./etudesdecas4.html">Projet 4 Cors'Expé</a></li>
+                    </ul>
+                    <li class="nav-item">
+                        <a class="nav1-link" href="./articles.html">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav1-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="burger" onclick="affichemenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- fin de header, début de la page principale. -->
+
+    <div class="container-fluid mt-5" id="B1" style="padding: 50px;">
+
+        <div class="row">
+
+            <div class="col-2"></div>
+            <div class="col-8"><div style="text-align: center;"><h1>Les méthodes du biocontrôle</h1><p>Le biocontrôle repose sur <span>quatre grandes catégories</span> de solutions inspirées par la nature. Ces méthodes permettent de <span>protéger</span> les cultures de manière <span>écologique et efficace.</span></div></p></div>
+            <div class="col-2"></div>
+
+        </div>
+        <div class="row mt-5">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="card text-center bg-custom-green text-black shadow-sm p-4 rounded-custom">
+                    <h1 class="h4">1 - Les Micro-organismes</h1>
+                    <div class="d-flex justify-content-center mb-3">
+                        <img src="../IMG/racine-removebg-preview.png" style="position: absolute; margin-top: 15%; margin-left: -28%; height: 150px; width: auto;"  alt="Virus" class="me-3">
+                        <img src="../IMG/champipi.png" alt="chapignon" class="me-3" style="height: 250px; width: auto;">
+                        <img src="../IMG/bactilius-removebg-preview.png" style="position: absolute; height: 250px; width: auto; margin-top: 15%; margin-left: 75%;transform: rotate(90deg);" alt="Bactérie">
+                    </div>
+                    <p>
+                        Les <span>champignons</span>, 
+                        <span>bactéries</span> et 
+                        <span>virus</span> protègent les cultures contre 
+                        les nuisibles et maladies ou stimulent leur vitalité.
+                    </p>
+                </div>                
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="d-flex align-items-center my-4">
+                <hr class="flex-grow-1 border-2 opacity-100 custom-line">
+                <span class="mx-3 text-black fw-bold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diamond-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.48 1.48 0 0 1 0-2.098z"/>
+                </svg></span>
+                <hr class="flex-grow-1 border-2 opacity-100 custom-line">
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="card text-center bg-custom-green text-black shadow-sm p-4 rounded-custom">
+                    <h1 class="h4">2 - Les Macro-organismes</h1>
+                    <div class="d-flex justify-content-center mb-3">
+                        <img src="../IMG/coccinelle2-removebg-preview.png" alt="chapignon" class="me-3" style="height: 250px; width: auto;">
+                    </div>
+                    <p>
+                        Les <span>insectes, acariens</span> et <span>nématodes</span> sont utilisés pour contrôler les nuisibles des cultures
+                    </p>
+                </div>                
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="d-flex align-items-center my-4">
+                <hr class="flex-grow-1 border-2 opacity-100 custom-line">
+                <span class="mx-3 text-black fw-bold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diamond-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.48 1.48 0 0 1 0-2.098z"/>
+                </svg></span>
+                <hr class="flex-grow-1 border-2 opacity-100 custom-line">
+            </div>
+        </div>
+    
+        <div class="row mt-3">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="card text-center bg-custom-green text-black shadow-sm p-4 rounded-custom">
+                    <h1 class="h4">3 - Les Médiateurs chimiques</h1>
+                    <div class="d-flex justify-content-center mb-3">
+                        <img src="../IMG/methodemod3.PNG" alt="chapignon" class="me-3" style="height: 250px; width: auto;">
+                    </div>
+                    <p>
+                        Les <span>phéromones</span> permettent de piéger ou perturber les insectes nuisibles, <span>limitant leur reproduction</span>.
+                    </p>
+                </div>                
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="d-flex align-items-center my-4">
+                <hr class="flex-grow-1 border-2 opacity-100 custom-line">
+                <span class="mx-3 text-black fw-bold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diamond-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.48 1.48 0 0 1 0-2.098z"/>
+                </svg></span>
+                <hr class="flex-grow-1 border-2 opacity-100 custom-line">
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="card text-center bg-custom-green text-black shadow-sm p-4 rounded-custom">
+                    <h1 class="h4">3 - Les Médiateurs chimiques</h1>
+                    <div class="d-flex justify-content-center mb-3">
+                        <img src="../IMG/methodemod4.PNG" alt="chapignon" class="me-3" style="height: 250px; width: auto;">
+                    </div>
+                    <p>
+                        Les <span>extraits de plantes</span>, <span>animaux ou minéraux</span> (comme le cuivre ou le soufre) servent de <span>protection naturelle</span>.
+                    </p>
+                </div>                
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="../javascript/general.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,581 @@
+/* Espacement entre les cases */
+
+#IMGT1 {
+    border-radius: 50px;
+}
+
+
+/* Réinitialisation des marges et des paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style global */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* Style du footer */
+footer {
+    background-color: #059347; /* Couleur de fond */
+    width: 100%; /* Prend toute la largeur */
+    height: 200px; /* Hauteur du footer */
+    display: flex; /* Centrage des icônes */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+
+/* Style des icônes */
+.footer-icons a {
+    color: #ffffff; /* Couleur blanche */
+    font-size: 36px; /* Taille plus grande des icônes */
+    margin: 0 20px; /* Espacement entre les icônes */
+    text-decoration: none; /* Enlève le soulignement */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Animation au survol */
+.footer-icons a:hover {
+    color: #d4d4d4; /* Gris clair au survol */
+    transform: scale(1.2); /* Agrandit légèrement l'icône */
+}
+
+#chart1_1 {
+    max-width: 400px;
+    max-height: 300px;
+    display: block;
+}
+#chart2_1 {
+    max-width: 500px;
+    max-height: 300px;
+    display: block;
+}
+#chart3_1 {
+    max-width: 500px;
+    max-height: 300px;
+    display: block;
+}
+#chart1_2 {
+    max-width: 400px;
+    max-height: 300px;
+    display: block;
+}
+#chart2_2 {
+    max-width: 500px;
+    max-height: 300px;
+    display: block;
+}
+#chart3_2 {
+    max-width: 500px;
+    max-height: 300px;
+    display: block;
+}
+#chart1_3 {
+    max-width: 500px;
+    max-height: 300px;
+    display: block;
+}
+#chart2_3 {
+    max-width: 500px;
+    max-height: 300px;
+    display: block;
+}
+#chart3_3 {
+    max-width: 500px;
+    max-height: 300px;
+    display: block;
+}
+#chart4_3 {
+    max-width: 500px;
+    max-height: 300px;
+    display: block;
+}
+
+
+#modele3D {
+    border-radius: 5%;
+    border-width: 3px;
+    border-color: black;
+}
+
+.bg-custom-green {
+    background-color: #A2D5A0; /* Vert personnalisé */
+    color: white; /* Texte blanc pour un bon contraste */
+}
+
+.rounded-custom {
+    border-radius: 20px; /* Vous pouvez ajuster la valeur */
+}
+
+.line {
+    border: none;
+    border-top: 3px solid black; /* Ligne horizontale fine */
+    margin: 0 auto 10px auto; /* Centré horizontalement et espace en dessous */
+    width: 80%; /* Largeur de la ligne */
+}
+
+#h1 {
+    text-align: center;
+}
+
+span {
+    color:red;
+    font-weight: bold;
+}
+
+html, body {
+    overflow: hidden; /* Empêche les barres par défaut */
+    overflow-y: scroll; /* Permet le défilement vertical sans barre */
+    scrollbar-width: none; /* Masque la barre sur Firefox */
+}
+
+html::-webkit-scrollbar {
+    display: none; /* Masque la barre sur Webkit (Chrome, Safari) */
+}
+
+/* Style du bouton burger */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 20;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+/* Masquer le menu par défaut sur petits écrans */
+@media screen and (max-width: 704px) {
+    #menu {
+        display: none; /* Masquer le menu */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #9BCB84;
+        padding: 10px;
+        z-index: 10;
+    }
+
+    #menu.active {
+        display: flex; /* Montrer le menu */
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .burger {
+        display: flex; /* Afficher le burger */
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+    }
+
+    #logo {
+        max-width: 85px;
+        max-height: 85px;
+        min-width: 45px;
+        min-height: 45px;
+    }
+
+    ul {
+        display: none;
+        flex-direction: column;
+        background-color: #9BCB84;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    ul.active {
+        display: flex;
+    }
+
+
+    #B1 {
+        background-color: #F5F9CE;
+    }
+    
+    body {
+        background-color: #F5F9CE;
+    }
+    .nav-item {
+        margin-right: 2px; /* Espace entre les boutons */
+        margin-left: 2px;
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
+
+    .nav-justified .nav-item {
+        flex-grow: 1; /* Les boutons prennent une largeur égale */
+    }
+
+
+    .dropdown-center {
+        color: white; /* Texte blanc */
+        background-color: #059347; /* Fond vert */
+        border: 2px solid #059347; /* Contour vert */
+        border-radius: 10px; /* Coins arrondis */
+        padding: 5px; /* Espacement interne */
+        text-align: center;
+        transition: 0.3s ease; /* Transition douce pour les effets */
+        text-decoration: none;
+        font-weight: bold;
+        display: flex; /* Permet l'alignement vertical et horizontal */
+        justify-content: center; /* Centrer le texte horizontalement */
+        align-items: center; /* Centrer le texte verticalement */
+        height: 50px; /* Hauteur uniforme des boutons */
+        text-align: center; /* Alignement centré du texte */
+        white-space: nowrap; /* Évite le retour à la ligne dans les boutons */
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
+
+    .dropdown-center.active{
+        color: #059347; /* Texte vert */
+        background-color: white; /* Fond blanc */
+        border-color: #059347; /* Contour vert */
+    }
+
+    .dropdown-center:hover {
+        background-color: white; /* Fond blanc */
+        color: #059347; /* Texte vert */
+    }
+    
+    /* Style par défaut pour les liens */
+    .nav1-link {
+        color: white; /* Texte blanc */
+        background-color: #059347; /* Fond vert */
+        border: 2px solid #059347; /* Contour vert */
+        border-radius: 10px; /* Coins arrondis */
+        padding: 5px; /* Espacement interne */
+        text-align: center;
+        transition: 0.3s ease; /* Transition douce pour les effets */
+        text-decoration: none;
+        font-weight: bold;
+        display: flex; /* Permet l'alignement vertical et horizontal */
+        justify-content: center; /* Centrer le texte horizontalement */
+        align-items: center; /* Centrer le texte verticalement */
+        height: 50px; /* Hauteur uniforme des boutons */
+        text-align: center; /* Alignement centré du texte */
+        white-space: nowrap; /* Évite le retour à la ligne dans les boutons */
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
+
+
+    /* Style au survol (hover) */
+    .nav1-link:hover {
+        background-color: white; /* Fond blanc */
+        color: #059347; /* Texte vert */
+    }
+
+    /* Style actif pour le lien sélectionné */
+    .nav1-link.active {
+        color: #059347; /* Texte vert */
+        background-color: white; /* Fond blanc */
+        border-color: #059347; /* Contour vert */
+    }
+}
+
+
+@media screen and ( min-width: 705px) and (max-width: 950px) {
+
+
+    #logo {
+        max-width: 85px;
+        max-height: 85px;
+        min-width: 45px;
+        min-height: 45px;
+    }
+
+    #B1 {
+        background-color: #F5F9CE;
+    }
+    
+
+    h3 {
+        text-align: center;
+    }
+
+    body {
+        background-color: #F5F9CE;
+    }
+    .nav-item {
+        margin-right: 2px; /* Espace entre les boutons */
+        margin-left: 2px;
+        
+    }
+
+    .nav-justified .nav-item {
+        flex-grow: 1; /* Les boutons prennent une largeur égale */
+    }
+
+
+    /* Style par défaut pour les liens */
+    .nav1-link {
+        color: white; /* Texte blanc */
+        background-color: #059347; /* Fond vert */
+        border: 2px solid #059347; /* Contour vert */
+        border-radius: 10px; /* Coins arrondis */
+        padding: 5px; /* Espacement interne */
+        text-align: center;
+        transition: 0.3s ease; /* Transition douce pour les effets */
+        text-decoration: none;
+        font-weight: bold;
+        display: flex; /* Permet l'alignement vertical et horizontal */
+        justify-content: center; /* Centrer le texte horizontalement */
+        align-items: center; /* Centrer le texte verticalement */
+        height: 50px; /* Hauteur uniforme des boutons */
+        text-align: center; /* Alignement centré du texte */
+        white-space: nowrap; /* Évite le retour à la ligne dans les boutons */
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
+
+    /* Style au survol (hover) */
+    .nav1-link:hover {
+        background-color: white; /* Fond blanc */
+        color: #059347; /* Texte vert */
+    }
+
+    /* Style actif pour le lien sélectionné */
+    .nav1-link.active {
+        color: #059347; /* Texte vert */
+        background-color: white; /* Fond blanc */
+        border-color: #059347; /* Contour vert */
+    }
+
+
+}
+
+
+@media screen and ( min-width: 950px) and (max-width: 920px) {
+
+    #logo {
+        max-width: 85px;
+        max-height: 85px;
+        min-width: 45px;
+        min-height: 45px;
+    }
+
+    #B1 {
+        background-color: #F5F9CE;
+    }
+    
+
+    h3 {
+        text-align: center;
+    }
+
+    body {
+        background-color: #F5F9CE;
+    }
+    .nav-item {
+        margin-right: 5px; /* Espace entre les boutons */
+        margin-left: 5px;
+        
+    }
+
+    .nav-justified .nav-item {
+        flex-grow: 1; /* Les boutons prennent une largeur égale */
+    }
+
+
+    /* Style par défaut pour les liens */
+    .nav1-link {
+        color: white; /* Texte blanc */
+        background-color: #059347; /* Fond vert */
+        border: 2px solid #059347; /* Contour vert */
+        border-radius: 10px; /* Coins arrondis */
+        padding: 12px; /* Espacement interne */
+        text-align: center;
+        transition: 0.3s ease; /* Transition douce pour les effets */
+        text-decoration: none;
+        font-weight: bold;
+        display: flex; /* Permet l'alignement vertical et horizontal */
+        justify-content: center; /* Centrer le texte horizontalement */
+        align-items: center; /* Centrer le texte verticalement */
+        height: 50px; /* Hauteur uniforme des boutons */
+        text-align: center; /* Alignement centré du texte */
+        white-space: nowrap; /* Évite le retour à la ligne dans les boutons */
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
+
+    /* Style au survol (hover) */
+    .nav1-link:hover {
+        background-color: white; /* Fond blanc */
+        color: #059347; /* Texte vert */
+    }
+
+    /* Style actif pour le lien sélectionné */
+    .nav1-link.active {
+        color: #059347; /* Texte vert */
+        background-color: white; /* Fond blanc */
+        border-color: #059347; /* Contour vert */
+    }
+
+
+}
+
+
+@media screen and ( min-width: 921px) and (max-width: 1299px) {
+
+    #logo {
+        max-width: 85px;
+        max-height: 85px;
+        min-width: 45px;
+        min-height: 45px;
+    }
+
+    #B1 {
+        background-color: #F5F9CE;
+    }
+    
+    h3 {
+        text-align: center;
+    }
+
+    body {
+        background-color: #F5F9CE;
+    }
+    .nav-item {
+        margin-right: 7px; /* Espace entre les boutons */
+        margin-left: 7px;
+        
+    }
+
+    .nav-justified .nav-item {
+        flex-grow: 1; /* Les boutons prennent une largeur égale */
+    }
+
+
+    /* Style par défaut pour les liens */
+    .nav1-link {
+        color: white; /* Texte blanc */
+        background-color: #059347; /* Fond vert */
+        border: 2px solid #059347; /* Contour vert */
+        border-radius: 10px; /* Coins arrondis */
+        padding: 12px; /* Espacement interne */
+        text-align: center;
+        transition: 0.3s ease; /* Transition douce pour les effets */
+        text-decoration: none;
+        font-weight: bold;
+        display: flex; /* Permet l'alignement vertical et horizontal */
+        justify-content: center; /* Centrer le texte horizontalement */
+        align-items: center; /* Centrer le texte verticalement */
+        height: 50px; /* Hauteur uniforme des boutons */
+        text-align: center; /* Alignement centré du texte */
+        white-space: nowrap; /* Évite le retour à la ligne dans les boutons */
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
+
+    /* Style au survol (hover) */
+    .nav1-link:hover {
+        background-color: white; /* Fond blanc */
+        color: #059347; /* Texte vert */
+    }
+
+    /* Style actif pour le lien sélectionné */
+    .nav1-link.active {
+        color: #059347; /* Texte vert */
+        background-color: white; /* Fond blanc */
+        border-color: #059347; /* Contour vert */
+    }
+
+
+}
+
+
+@media screen and ( min-width: 1300px) and (max-width : 2550px) {
+
+    #logo {
+        max-width: 85px;
+        max-height: 85px;
+        min-width: 45px;
+        min-height: 45px;
+    }
+
+    #B1 {
+        background-color: #F5F9CE;
+    }
+    
+    h3 {
+        text-align: center;
+    }
+
+    body {
+        background-color: #F5F9CE;
+    }
+
+    .nav-item {
+        margin-right: 18px; /* Espace entre les boutons */
+        margin-left: 18px;
+    }
+
+    .nav-justified .nav-item {
+        flex-grow: 1; /* Les boutons prennent une largeur égale */
+    }
+
+
+    /* Style par défaut pour les liens */
+    .nav1-link {
+        color: white; /* Texte blanc */
+        background-color: #059347; /* Fond vert */
+        border: 2px solid #059347; /* Contour vert */
+        border-radius: 10px; /* Coins arrondis */
+        padding: 12px; /* Espacement interne */
+        text-align: center;
+        transition: 0.3s ease; /* Transition douce pour les effets */
+        text-decoration: none;
+        font-weight: bold;
+        display: flex; /* Permet l'alignement vertical et horizontal */
+        justify-content: center; /* Centrer le texte horizontalement */
+        align-items: center; /* Centrer le texte verticalement */
+        height: 50px; /* Hauteur uniforme des boutons */
+        text-align: center; /* Alignement centré du texte */
+        white-space: nowrap; /* Évite le retour à la ligne dans les boutons */
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
+
+    /* Style au survol (hover) */
+    .nav1-link:hover {
+        background-color: white; /* Fond blanc */
+        color: #059347; /* Texte vert */
+    }
+
+    /* Style actif pour le lien sélectionné */
+    .nav1-link.active {
+        color: #059347; /* Texte vert */
+        background-color: white; /* Fond blanc */
+        border-color: #059347; /* Contour vert */
+    }
+
+
+}
+
+
+
+
